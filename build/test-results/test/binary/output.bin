@@ -1,16 +1,40 @@
 Request method:	POST
-IRequest URI:	https://webapi.segundamano.mx/nga/api/v1.1/private/accounts
+QRequest URI:	https://webapi.segundamano.mx/nga/api/v1.1/private/accounts?lang=es
 Proxy:			<none>
 Request params:	<none>
-Query params:	<none>
+Query params:	lang=es
 Form params:	<none>
 Path params:	<none>
-Headers:		Accept=*/*
+GHeaders:		Authorization=Basic YXBpdGVzdEBtYWlsaW5hdG9yLmNvbToxMjM0NQ==
+				Accept=*/*
 G				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
 Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
-Status expected: 400
+¬Body response= {"access_token":"mc1x31141da9952035413be6a9b6f963809691753c11_v2","account":{"account_id":"/private/accounts/10806030","can_publish":true,"email":"apitest@mailinator.com","locations":[],"name":"Juanito Escarcha","phone":"5512284147","phone_hidden":false,"professional":false,"rfc":"VESC9212113E3","uuid":"f3eb4a0b-abcc-479b-bfd5-7faf293216fa"},"ad_events":{"24h":{"calls":0,"mails":0,"phone_views":0,"views":0},"7d":{"calls":0,"mails":0,"phone_views":0,"views":0},"total":{"calls":0,"mails":0,"phone_views":0,"views":0}},"token_type":"tag:scmcoord.com,2013:api"}
+Status response: 200
+7token: mc1x31141da9952035413be6a9b6f963809691753c11_v2
+&accountID: /private/accounts/10806030
++uuid: f3eb4a0b-abcc-479b-bfd5-7faf293216fa
+Request method:	POST
+?Request URI:	https://webapi.segundamano.mx/addresses/v1/create
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	contact=Vendedor
+				phone=5512345678
+				rfc=VESC9212113E3
+				zipCode=07580
+!				exteriorInfo=COATZACOALCOSss
+				region=16
+				municipality=755
+				alias=CASA
+Path params:	<none>
+èHeaders:		Authorization=Basic ZjNlYjRhMGItYWJjYy00NzliLWJmZDUtN2ZhZjI5MzIxNmZhOm1jMXgzMTE0MWRhOTk1MjAzNTQxM2JlNmE5YjZmOTYzODA5NjkxNzUzYzExX3Yy
+				Accept=*/*
+B				Content-Type=application/x-www-form-urlencoded; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Status expected: 201
 Result: 400
-(Error Code expected: VALIDATION FAILED 
-Result: VALIDATION_FAILED

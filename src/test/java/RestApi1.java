@@ -18,7 +18,7 @@ public class RestApi1 {
     static private String newText;
     static private String adID;
     static private String token2;
-    static private String address_id);
+    static private String address_id;
 
     @Test
     public void get_token_status_fail_test(){
@@ -101,9 +101,10 @@ public class RestApi1 {
 
     @Test
     public void j_adAddress() {
-        RestAssured.baseURI = String.format("%s/addresses/v1/create", base_url);
+        RestAssured.baseURI = String.format("%s/addresses/v1/create", baseUrl);
+        String token2Keys = uuid + ":" + token;
         Response response = given().log().all().
-                header("Authorization", "Basic " + getToken2(uuid, token)).
+                header("Authorization", "Basic " + token2Keys).
                 header("Content-Type", "application/x-www-form-urlencoded;charset=UTF-8").
                 formParam("contact", "Casa Grande").
                 formParam("phone", "3366778899").
